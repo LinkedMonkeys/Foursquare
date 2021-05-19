@@ -1,7 +1,6 @@
 #game {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .row {
@@ -9,5 +8,43 @@
 }
 
 #drawPile {
-    
+    margin: 20px;
+}
+
+.spot, .emptySpot {
+    height: 190px;
+    width: 150px;
+    margin: 5px;
+}
+
+.emptySpot {
+    background-color: lightgray;
+}
+
+.spot {
+    position: relative;
+}
+
+.card0, .card1, .card2, .card3 {
+    position: absolute;
+}
+
+.card0 {
+    left: 0px;
+    z-index: 1;
+}
+
+.card1 {
+    left: 5px;
+    z-index: 2;
+}
+
+.card2 {
+    left: 10px;
+    z-index: 3;
+}
+
+.card3 {
+    left: 15px;
+    z-index: 4;
 }
